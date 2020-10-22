@@ -1,6 +1,10 @@
 <template>
   <div>
-    <button @click="$emit('update:num1', num1+5);$emit('update:num2', num2+10);$emit('update:num3', num3+15);">增加</button>
+    <h4>ccc</h4>
+    <slot name="first"></slot>
+    <slot />
+    <h4>ddd</h4>
+    <!-- <button @click="$emit('update:num1', num1+5);$emit('update:num2', num2+10);$emit('update:num3', num3+15);">增加</button> -->
   </div>
 </template>
 
